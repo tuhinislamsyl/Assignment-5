@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Issues Tracker</title>
+
+    <!-- daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <!-- css connect -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="flex min-h-screen justify-center items-center bg-gray-100">
+
+    <div class="bg-white p-10 rounded-xl shadow-lg w-120 text-center">
+        <img class="mx-auto mb-4" src="assets/github-logo.png" alt="">
+
+        <h1 class="font-semibold text-3xl">GitHub Issues Tracker</h1>
+        <p class="text-gray-500">Sign in to manage your issues</p>
+
+        <div class="hero-content flex-col lg:flex-row-reverse p-0 w-100 justify-center items-center mx-auto">
+            <div class="text-center lg:text-left">
+            </div>
+            <div class="card w-full max-w-sm shrink-0 justify-center items-center mx-auto">
+                <div class="card-body ">
+                    <fieldset class="fieldset">
+                        <label class="label text-neutral font-semibold">Username</label>
+                        <input type="email" class="input" placeholder="Email" />
+                        <label class="label text-neutral font-semibold mb-2 text-purple-700">Default: admin</label>
+                        <label class="label text-neutral font-semibold">Password</label>
+                        <input type="password" class="input" placeholder="Password" />
+                        <label class="label text-neutral font-semibold  text-purple-700">Default: admin123</label>
+                        <button class="btn btn-neutral w-80 mt-3 bg-[#4A00FF] hover:bg-[#3200b1fa]">Login</button>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex items-center my-2 w-80 mx-auto">
+            <div class="flex-grow border-t w-0 border-gray-300"></div>
+            <span class="mx-4 text-gray-500">OR</span>
+            <div class="flex-grow border-t border-gray-300"></div>
+        </div>
+
+       <p class="text-gray-600 mb-1">Demo Credentials:</p>
+
+       <div class="bg-[#F8FAFC] rounded-sm py-4 w-80 mx-auto">
+        <p><span class="font-bold">Username:</span> admin</p>
+        <p><span class="font-bold">Password:</span> admin123</p>
+       </div>
+
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
