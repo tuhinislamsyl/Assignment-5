@@ -1,11 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>home</title>
+
+    <!-- daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <!-- css connect -->
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <h2>THIS IS YOUR NEW PAGE</h2>
+
+<body class="bg-gray-50">
+
+
+    <div class="navbar bg-base-100 shadow-sm p-6 mb-10 flex  justify-between mx-auto lg:px-30">
+
+        <div class="flex items-center"> 
+            <img src="assets/github-logo.png" class="mr-2 h-12 w-auto ">
+            <h1 class=" font-semibold text-3xl mt-1">GitHub Issues Tracker</h1>
+        </div>
+
+        <div class="flex gap-2 ">
+
+            <div class="flex"> <i class="fa-solid fa-magnifying-glass relative left-8 mt-3 opacity-60"></i>
+                
+            <input type="text" placeholder="Search" class=" px-9 input-bordered p-2 rounded-sm border-gray-400 w-full" />
+            </div>
+
+            <div class="dropdown dropdown-end ">
+                <div class=""> <button
+                        class="bg-[#4A00FF] text-white w-25 py-2 rounded hover:bg-[#3300b5] font-semibold">+New Issue
+                    </button> </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <main class="flex justify-center mt-16 mb-10 px-4">
+
+        <div class="inline-flex bg-white border border-gray-200 rounded-xl p-4.5 shadow-sm w-full max-w-5xl gap-3"> -->
+
+    <section class="flex mt-16 mb-10 px-4 justify-center">
+
+        <div class="inline-flex bg-white border border-gray-200 rounded-xl p-4.5 shadow-sm w-full max-w-5xl gap-3">
+            <button class="bg-[#4A00FF] text-white w-25 py-2 font-semibold rounded hover:bg-[#3300b5]">All</button>
+            <button class="text-gray-500 w-25 py-2 font-semibold rounded bg-red-400">Open</button>
+            <button class="text-gray-500 w-25 py-2 font-semibold rounded bg- bg-green-400">Closed</button>
+
+        </div>
+
+
+        
+
+
+
+    </section>
+
+
 </body>
+
 </html>
